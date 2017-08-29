@@ -31,9 +31,11 @@ document.addEventListener("online", onOnline, false);
 function onOnline() {
 }
 
-        function didReceiveRemoteNotificationCallBack(jsonData) {   
+        function didReceiveRemoteNotificationCallBack(jsonData) {
+var ref = cordova.InAppBrowser.open('http://araik.controlsoft.kz/admin/call.php', '_blank', 'location=yes','closebuttoncaption=Закрыть');
 }
         function didOpenRemoteNotificationCallBack(jsonData) {
+var ref = cordova.InAppBrowser.open('http://araik.controlsoft.kz/admin/call.php', '_blank', 'location=yes','closebuttoncaption=Закрыть');
 }
         //Настройка ПУШЕЙ ДЛЯ АЙФОНА
         var iosSettings = {};
