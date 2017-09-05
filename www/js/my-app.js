@@ -145,7 +145,6 @@ userUpd();
 });
 
 $(document).on("click","#admGo", function() {
-	alert(localStorage.ipush);
 var ref = cordova.InAppBrowser.open('http://araik.controlsoft.kz/admin/pages/examples/sign-in.html?ipush='+localStorage.ipush, '_blank', 'location=yes','closebuttoncaption=Закрыть');
 });
 $(document).on("click",".dzDone", function() {
