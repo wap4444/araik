@@ -348,7 +348,7 @@ error: function(XMLHttpRequest, textStatus, errorThrown){
 $(document).on("click","#GoReg1", function() {
 clientPhonePass=$('#clientPhonePass').val();
 alert('1111'+localStorage.ipush);
-$.ajax({type: 'POST',url: 'http://araik.controlsoft.kz/fr7/api/regFinal.php',data: {clientPhoneReg:clientPhoneReg,clientPhonePass:clientPhonePass,ipush:localStorage.ipush},
+$.ajax({type: 'POST',url: 'http://araik.controlsoft.kz/fr7/api/regFinal.php',data: {clientPhoneReg:clientPhoneReg,clientPhonePass:clientPhonePass,ipush:'2222'},
 success: function(data){
 if(data.charAt(0)=='E'){myApp.alert('Неверный пароль');}
 else{
