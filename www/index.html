@@ -1,185 +1,68 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
- <meta name="format-detection" content="telephone=no">
+    <head>
+	    <meta charset="UTF-8">
+        <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
-    <title>My App</title>
-    <!-- Path to Framework7 Library CSS-->
-    <link rel="stylesheet" href="css/framework7.ios.min.css">
-    <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
-	<link rel="stylesheet" href="css/font-awesome.css">
-    <!-- Path to your custom app styles-->
-    <link rel="stylesheet" href="http://araik.controlsoft.kz/fr7/css/my-app.css">
-	<style>
-	.swiper-slide {
-  background: #fff;
-  box-sizing: border-box;
-  border: 1px solid #ccc;
-}
-.swiper-slide span {
-  text-align:center;
-  display:block;
-  margin: 20px;
-  font-size:21px;
-}
-.swiper-container {
-  height: 200px;
-  margin: 35px 0;
-}
-  .demo-card-header-pic .card-header {
-    height: 40vw;
-    background-size: cover;
-    background-position: center;
-  }
-	</style>
-  </head>
- <body>
-    <!-- Status bar overlay for fullscreen mode-->
-    <div class="statusbar-overlay"></div>
-    <!-- Panels overlay-->
-    <div class="panel-overlay"></div>
-    <!-- Left panel with reveal effect-->
-    <div class="panel panel-left panel-reveal">
-    </div>
-    <!-- Right panel with cover effect-->
-    <div class="panel panel-right panel-cover">
-      <div class="content-block">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+	 <link href="css/main.css" rel="stylesheet">
+    </head>
 
-      </div>
-    </div>
-    <!-- Views-->
-    <div class="views">
-      <!-- Your main view, should have "view-main" class-->
-      <div class="view view-main">
-        <!-- Top Navbar-->
-        <div class="navbar">
-          <div class="navbar-inner">
-		              <div class="center sliding">Linguastan</div>
-		    <div class="left">
-            </div>
-            <!-- We have home navbar without left link-->
+<body id="top" style="text-align:center;">
 
-		    <div class="right">
-            <a id="login">Вход</a>
-            <a id="profile" style="display:none;" href="prof.html"><i class="fa fa-user-circle-o" style="
-    font-size: 30px;
-"></i></a>
-            </div>
-          </div>
-        </div>
-        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
-        <div class="pages navbar-through toolbar-through">
-          <!-- Page, data-page contains page name-->
-          <div data-page="index" class="page">
-            <!-- Scrollable page content-->
-            <div class="page-content" style="padding-bottom:0px;">
-			
-			
-			
-			
-  <div class="swiper-container swiper-slow" style="margin:0px;">
-    <div class="swiper-pagination"></div>
-    <div class="swiper-wrapper">
-    </div>
-  </div>
-<div class="mainmenu" style="
-    margin-top: 4px;
-">
 
-  <a href="rasp.html"><div class="heading-style" id="raspisMenu"  style="display:none; background-image: url(img/raspis.jpg)">
-	<h4 class="heading-title">Расписание</h4> <div class="overlay"></div>
-	</div></a>
+<div class="loader1" style="color: #f08d43;text-align:center; display:none; background-color: rgba(255, 255, 255,1);
+    height: 100%;    padding-top: 100px;
+    width: 100%;">
+<p id="loaderInfo">Первый запуск займет немного времени...</p>
+<img src="movin-food.gif" width="100%">
+<p>Первый запуск займет немного времени...<br>Благодарим за ожидание!</p>
+</div> 
 
-  <a href="blog.html"><div class="heading-style" style="background-image: url(img/rasp.jpg)">
-	<h4 class="heading-title">Новости</h4> <div class="overlay"></div>
-	</div></a>
 	
-	  <a id="bestUser"><div class="heading-style" style="background-image: url(img/bestuser.jpg)">
-	<h4 class="heading-title">Лучшие ученики</h4> <div class="overlay"></div>
-	</div></a>
+<div class="loader2" style="color: #fff; height: 100%;padding-top: 100px;width: 100%;display:none;">
+<p id="inetOff" style="display:none;">Отсутствует подключение к Интернет. Проверьте настройки телефона и повторите попытку.</p>
+<a style="    border-radius: 5px;
+    display: inline-block;
+    border: 2px solid #fff;
+ left:50%; 
+ margin-left:-100px; 
+    text-decoration: none;
+    font-weight: normal;
+ 
+    box-sizing: border-box;
+    font-weight: 500;
+    -webkit-transition: 200ms;
+    -moz-transition: 200ms;
+    -ms-transition: 200ms;
+    -o-transition: 200ms;
+    transition: 200ms;
+    border-color: #fff;
+    line-height: 44px;
+ width:200px; 
+        font-family: 'myriad',Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #f08d43;text-align:center; 
+    font-size: 20px;
+    position:absolute;
+    bottom:100px;
+ " id="BtnEnt">ВХОД</a></div>
 	
-<a href="about.html"><div class="heading-style" style="background-image: url(img/cont.jpg)">
-	<h4 class="heading-title">Контакты</h4> <div class="overlay"></div>
-	</div></a>
-	
-    </div>
-<!-- <div class="content-block" style="margin:0px;"> -->
-      <!-- <div class="content-block-inner"> -->
-<!-- <div class="row"> -->
-        <!-- <div class="col-33" id="clientPhoto"></div> -->
-        <!-- <div class="col-66" id="clientInfoArea"></div> -->
-<!-- </div> -->
-	  <!-- </div> -->
-<!-- <div class="content-block-inner" id="lenta"> -->
-<!-- </div> -->
-<!-- </div> -->
-
-
-
-			  
-            </div>
-            </div>
-			
-			
-<div class="login-screen">
- <div class="page-content login-screen-content">
-    <div class="login-screen-title">Регистрация</div>
-    <form>
-      <div class="list-block">
-        <ul>
-          <li class="item-content">
-            <div class="item-inner">
-              <div class="item-title label">Телефон</div>
-              <div class="item-input">
-                <input type="text" id="clientPhoneReg" autocomplete="off" placeholder="Ваш номер телефона"/>
-              </div>
-            </div>
-          </li>
-          <li class="item-content" id="passArea" style="display:none;">
-            <div class="item-inner">
-              <div class="item-title label">Пароль</div>
-              <div class="item-input">
-                <input type="text"  id="clientPhonePass" autocomplete="off" placeholder="Код из СМС"/>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="list-block">
-        <ul>
-          <li><a class="item-link list-button" id="GoReg">Продолжить</a><a class="item-link list-button" id="GoReg1" style="display:none;">Продолжить</a></li>
-        </ul>
-        <div class="list-block-label">
-          <a id="regClose">Закрыть</a>
-        </div>
-      </div>
-    </form>
-  </div>
+	<div class="site-wrapper-inner">
+<div class="cover-container">
+<div class="masthead clearfix">
+<div class="inner">
 </div>
-			
-			
-          </div>
-        </div>
+</div><br> <div class="inner cover">
 
-      </div>
-    </div>
-	        <script type="text/javascript" src="cordova.js"></script>
+</div>
+</div>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+	        <script type="text/javascript" src="jquery-latest.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
         </script>
-    <!-- Jquery Core Js -->
-    <script src="http://araik.controlsoft.kz/admin/plugins/jquery/jquery.min.js"></script>
-	<!-- Input Mask Plugin Js -->
-    <script src="http://araik.controlsoft.kz/admin/plugins/jquery-inputmask/jquery.inputmask.bundle.js"></script>
-    <!-- Path to Framework7 Library JS-->
-    <script type="text/javascript" src="http://araik.controlsoft.kz/fr7/js/framework7.min.js"></script>
-    <!-- Path to your app js-->
-    <script type="text/javascript" src="http://araik.controlsoft.kz/fr7/js/my-app.js"></script>
-  </body>
+    </body>
 </html>
