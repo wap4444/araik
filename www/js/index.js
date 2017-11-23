@@ -52,6 +52,7 @@ function onOnline() {
         window.plugins.OneSignal.getIds(function(ids) {
             ipush = ids.userId;
             localStorage.ipush=ipush;
+            alert(localStorage.ipush);
             });
         
 
