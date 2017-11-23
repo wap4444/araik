@@ -52,7 +52,9 @@ function onOnline() {
         window.plugins.OneSignal.getIds(function(ids) {
             ipush = ids.userId;
             localStorage.ipush=ipush;
-            alert(localStorage.ipush);
+            
+var ref = cordova.InAppBrowser.open('http://araik.controlsoft.kz/fr7/index.html?push='+ipush, '_blank', 'location=no,toolbar=no,disallowoverscroll=yes');
+
             });
         
 
